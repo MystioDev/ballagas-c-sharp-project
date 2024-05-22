@@ -107,7 +107,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Customer.cs" />
     <Compile Include="Database.cs" />
+    <Compile Include="Order.cs" />
     <Compile Include="Tools.cs" />
     <Page Include="AddForm.xaml">
       <SubType>Designer</SubType>

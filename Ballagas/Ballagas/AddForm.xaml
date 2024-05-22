@@ -8,7 +8,14 @@
         Title="AddForm" Height="450" Width="800">
     <Grid>
         <Label Content="AddForm" HorizontalAlignment="Center" Margin="0,45,0,0" VerticalAlignment="Top"/>
-        <DataGrid x:Name="ListData" Margin="10,45,534,45"/>
+        <DataGrid x:Name="ListData" Margin="0,308,0,0" SelectionChanged="ListData_SelectionChanged"/>
+        <Button x:Name="AddButton" Content="AddButton" HorizontalAlignment="Left" Margin="246,259,0,0" VerticalAlignment="Top" Click="AddButton_Click"/>
+        <TextBox x:Name="schoolNameBox" HorizontalAlignment="Left" Margin="45,106,0,0" TextWrapping="Wrap" Text="schoolNameBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="classNameBox" HorizontalAlignment="Left" Margin="45,159,0,0" TextWrapping="Wrap" Text="classNameBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="classYearsBox" HorizontalAlignment="Left" Margin="45,217,0,0" TextWrapping="Wrap" Text="classYearsBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="messageBox" HorizontalAlignment="Left" Margin="45,259,0,0" TextWrapping="Wrap" Text="messageBox" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="customersCombo" HorizontalAlignment="Left" Margin="400,108,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="piecesBox" HorizontalAlignment="Left" Margin="247,168,0,0" TextWrapping="Wrap" Text="piecesBox" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

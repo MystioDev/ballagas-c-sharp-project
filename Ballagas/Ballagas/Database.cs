@@ -4,20 +4,32 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Ballagas
 {
     internal class Database
     {
-        private MySqlConnection getConnection()
+        public MySqlConnection getConnection()
         {
             try
             {
-                string connStr = "server=localhost;user=root;database=graduation;port=3306;password=";
-                MySqlConnection conn = new MySqlConnection(connStr);
+                const string server = "localhost";
+                const string ab = "graduation";
+                const string user = "root";
+                const string pass = "";
+                string connString = $"server = {server}; " +
+                    $"database = {ab}; uid={user}; " +
+                    $"pw = {pass} ";
+
+
+                MySqlConnection conn = new MySqlConnection(connString);
+
+                return conn;
             } catch (Exception ex)
             {
-                throw new Exception("[!] Error: " + ex.Message);
+                MessageBox.Show("[!] Error: " + ex.Message);
+                return null;
             }
         }
     }
