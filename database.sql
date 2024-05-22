@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2024. Máj 22. 13:47
+-- Létrehozás ideje: 2024. Máj 22. 13:56
 -- Kiszolgáló verziója: 10.4.28-MariaDB
 -- PHP verzió: 8.2.4
 
@@ -35,6 +35,20 @@ CREATE TABLE `customers` (
   `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
 
+--
+-- A tábla adatainak kiíratása `customers`
+--
+
+INSERT INTO `customers` (`name`, `phone`, `id`) VALUES
+('Példa Név', '+3606999999', 1),
+('Példa Béla', '+3606999999', 2),
+('Példa Marci', '+3606999999', 3),
+('Példa Peti', '+3606999999', 4),
+('Példa Géza', '+3606999999', 5),
+('Példa Dávid', '+3606999999', 6),
+('Példa Dominik', '+3606999999', 7),
+('Példa Valaki', '+3606999999', 8);
+
 -- --------------------------------------------------------
 
 --
@@ -56,12 +70,11 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`schoolName`, `className`, `classYears`, `message`, `status`, `customerId`, `id`) VALUES
-('\r\nSiófoki SZC Mathiász János Technikum és Gimnázium', '12/A', '2020-2024', 'üzenet 1', 'Függőben', 0, 1),
-('\r\nSiófoki SZC Mathiász János Technikum és Gimnázium', '12/D', '2020-2024', 'üzenet 2', 'Függőben', 0, 2),
-('\r\nSiófoki SZC Mathiász János Technikum és Gimnázium', '12/E', '2020-2024', 'üzenet 3', 'Függőben', 0, 3),
-('\r\nSiófoki SZC Mathiász János Technikum és Gimnázium', '12/F', '2020-2024', 'üzenet 4', 'Függőben', 0, 4),
-('\r\nSiófoki SZC Mathiász János Technikum és Gimnázium', '12/G', '2020-2024', 'üzenet 5', 'Függőben', 0, 5),
-('\r\nSiófoki SZC Mathiász János Technikum és Gimnázium', '12/B', '2020-2024', 'üzenet 6', 'Függőben', 0, 6);
+('\r\nSiófoki SZC Mathiász János Technikum és Gimnázium', '12/A', '2020-2024', 'Üzenet', 'Függőben', 2, 7),
+('\r\nSiófoki SZC Mathiász János Technikum és Gimnázium', '12/A', '2020-2024', 'Üzenet', 'Függőben', 5, 8),
+('\r\nSiófoki SZC Mathiász János Technikum és Gimnázium', '12/A', '2020-2024', 'Üzenet', 'Függőben', 1, 9),
+('\r\nSiófoki SZC Mathiász János Technikum és Gimnázium', '12/A', '2020-2024', 'Üzenet', 'Függőben', 8, 10),
+('\r\nSiófoki SZC Mathiász János Technikum és Gimnázium', '12/A', '2020-2024', 'Üzenet', 'Függőben', 3, 11);
 
 --
 -- Indexek a kiírt táblákhoz
@@ -77,7 +90,8 @@ ALTER TABLE `customers`
 -- A tábla indexei `orders`
 --
 ALTER TABLE `orders`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `customerId` (`customerId`);
 
 --
 -- A kiírt táblák AUTO_INCREMENT értéke
@@ -87,13 +101,23 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT a táblához `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT a táblához `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- Megkötések a kiírt táblákhoz
+--
+
+--
+-- Megkötések a táblához `orders`
+--
+ALTER TABLE `orders`
+  ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`customerId`) REFERENCES `customers` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
