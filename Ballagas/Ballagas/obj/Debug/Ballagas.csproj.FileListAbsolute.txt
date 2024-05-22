@@ -13,3 +13,9 @@ C:\Users\varadi_marcell\Documents\c#\ballagas-c-sharp-project\Ballagas\Ballagas\
 C:\Users\varadi_marcell\Documents\c#\ballagas-c-sharp-project\Ballagas\Ballagas\obj\Debug\Ballagas.csproj.CoreCompileInputs.cache
 C:\Users\varadi_marcell\Documents\c#\ballagas-c-sharp-project\Ballagas\Ballagas\obj\Debug\Ballagas.exe
 C:\Users\varadi_marcell\Documents\c#\ballagas-c-sharp-project\Ballagas\Ballagas\obj\Debug\Ballagas.pdb
+C:\Users\varadi_marcell\Documents\c#\ballagas-c-sharp-project\Ballagas\Ballagas\obj\Debug\AddForm.g.cs
+C:\Users\varadi_marcell\Documents\c#\ballagas-c-sharp-project\Ballagas\Ballagas\obj\Debug\DeleteForm.g.cs
+C:\Users\varadi_marcell\Documents\c#\ballagas-c-sharp-project\Ballagas\Ballagas\obj\Debug\EditForm.g.cs
+C:\Users\varadi_marcell\Documents\c#\ballagas-c-sharp-project\Ballagas\Ballagas\obj\Debug\AddForm.baml
+C:\Users\varadi_marcell\Documents\c#\ballagas-c-sharp-project\Ballagas\Ballagas\obj\Debug\DeleteForm.baml
+C:\Users\varadi_marcell\Documents\c#\ballagas-c-sharp-project\Ballagas\Ballagas\obj\Debug\EditForm.baml

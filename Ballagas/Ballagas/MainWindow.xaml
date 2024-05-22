@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="openAddForm" Content="openAddForm" HorizontalAlignment="Left" Margin="56,217,0,0" VerticalAlignment="Top" Height="59" Width="117"/>
-        <Button x:Name="openEditForm" Content="openEditForm" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Height="59" Width="116"/>
-        <Button x:Name="openDeleteForm" Content="openDeleteForm" HorizontalAlignment="Left" Margin="617,217,0,0" VerticalAlignment="Top" Height="59" Width="117"/>
+        <Button x:Name="openAddForm" Content="openAddForm" HorizontalAlignment="Left" Margin="56,217,0,0" VerticalAlignment="Top" Height="59" Width="117" Click="openAddForm_Click"/>
+        <Button x:Name="openEditForm" Content="openEditForm" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Height="59" Width="116" Click="openEditForm_Click"/>
+        <Button x:Name="openDeleteForm" Content="openDeleteForm" HorizontalAlignment="Left" Margin="617,217,0,0" VerticalAlignment="Top" Height="59" Width="117" Click="openDeleteForm_Click"/>
 
     </Grid>
 </Window>

@@ -24,5 +24,23 @@ namespace Ballagas
         {
             InitializeComponent();
         }
+
+        private void openAddForm_Click(object sender, RoutedEventArgs e)
+        {
+            AddForm form = new AddForm();
+            form.ShowDialog();
+        }
+
+        private void openEditForm_Click(object sender, RoutedEventArgs e)
+        {
+            EditForm form = new EditForm();
+            form.ShowDialog();
+        }
+
+        private void openDeleteForm_Click(object sender, RoutedEventArgs e)
+        {
+            DeleteForm form = new DeleteForm();
+            form.ShowDialog();
+        }
     }
 }
