@@ -1,0 +1,15 @@
+C:\Users\varadi_marcell\Documents\c#\ballagas-c-sharp-project\Ballagas\Ballagas\bin\Debug\Ballagas.exe.config
+C:\Users\varadi_marcell\Documents\c#\ballagas-c-sharp-project\Ballagas\Ballagas\bin\Debug\Ballagas.exe
+C:\Users\varadi_marcell\Documents\c#\ballagas-c-sharp-project\Ballagas\Ballagas\bin\Debug\Ballagas.pdb
+C:\Users\varadi_marcell\Documents\c#\ballagas-c-sharp-project\Ballagas\Ballagas\obj\Debug\Ballagas.csproj.AssemblyReference.cache
+C:\Users\varadi_marcell\Documents\c#\ballagas-c-sharp-project\Ballagas\Ballagas\obj\Debug\MainWindow.g.cs
+C:\Users\varadi_marcell\Documents\c#\ballagas-c-sharp-project\Ballagas\Ballagas\obj\Debug\App.g.cs
+C:\Users\varadi_marcell\Documents\c#\ballagas-c-sharp-project\Ballagas\Ballagas\obj\Debug\Ballagas_MarkupCompile.cache
+C:\Users\varadi_marcell\Documents\c#\ballagas-c-sharp-project\Ballagas\Ballagas\obj\Debug\Ballagas_MarkupCompile.lref
+C:\Users\varadi_marcell\Documents\c#\ballagas-c-sharp-project\Ballagas\Ballagas\obj\Debug\MainWindow.baml
+C:\Users\varadi_marcell\Documents\c#\ballagas-c-sharp-project\Ballagas\Ballagas\obj\Debug\Ballagas.g.resources
+C:\Users\varadi_marcell\Documents\c#\ballagas-c-sharp-project\Ballagas\Ballagas\obj\Debug\Ballagas.Properties.Resources.resources
+C:\Users\varadi_marcell\Documents\c#\ballagas-c-sharp-project\Ballagas\Ballagas\obj\Debug\Ballagas.csproj.GenerateResource.cache
+C:\Users\varadi_marcell\Documents\c#\ballagas-c-sharp-project\Ballagas\Ballagas\obj\Debug\Ballagas.csproj.CoreCompileInputs.cache
+C:\Users\varadi_marcell\Documents\c#\ballagas-c-sharp-project\Ballagas\Ballagas\obj\Debug\Ballagas.exe
+C:\Users\varadi_marcell\Documents\c#\ballagas-c-sharp-project\Ballagas\Ballagas\obj\Debug\Ballagas.pdb
