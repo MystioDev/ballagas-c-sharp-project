@@ -7,13 +7,13 @@
         mc:Ignorable="d"
         Title="EditForm" Height="450" Width="800">
     <Grid>
-        <Label Content="EditForm" HorizontalAlignment="Left" Margin="353,59,0,0" VerticalAlignment="Top"/>
+        <Label Content="Megrendelés Szerkesztése" HorizontalAlignment="Left" Margin="200,49,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="24"/>
         <DataGrid x:Name="ListData" Margin="0,308,0,0" SelectionChanged="ListData_SelectionChanged"/>
 
 
-        <TextBox x:Name="piecesBox" HorizontalAlignment="Left" Margin="442,125,0,0" TextWrapping="Wrap" Text="piecesBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="1.077,0.163"/>
+        <TextBox x:Name="piecesBox" HorizontalAlignment="Left" Margin="442,125,0,0" TextWrapping="Wrap" Text="piecesBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="1.077,0.163" Height="20"/>
         <ComboBox x:Name="statusCombo" HorizontalAlignment="Left" Margin="442,166,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="EditButton" Content="EditButton" HorizontalAlignment="Left" Margin="649,241,0,0" VerticalAlignment="Top" Click="EditButton_Click"/>
+        <Button x:Name="EditButton" Content="Kiválasztott elem szerkesztése" HorizontalAlignment="Left" Margin="583,125,0,0" VerticalAlignment="Top" Click="EditButton_Click" Height="65" Width="195"/>
         <Label x:Name="labelCurrentStatus" Content="Kiválasztott elem státusza: " HorizontalAlignment="Left" Margin="33,177,0,0" VerticalAlignment="Top"/>
         <Label x:Name="labelCurrentPieces" Content="Kiválasztott elem darabszáma: " HorizontalAlignment="Left" Margin="12,217,0,0" VerticalAlignment="Top"/>
 

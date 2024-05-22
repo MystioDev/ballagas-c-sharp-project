@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="DeleteForm" Height="450" Width="800">
     <Grid>
-        <Label Content="DeleteForm" HorizontalAlignment="Left" Margin="376,58,0,0" VerticalAlignment="Top"/>
+        <Label Content="Megrendelés Törlése" HorizontalAlignment="Center" Margin="0,47,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="24"/>
 
         <DataGrid x:Name="ListData" Margin="0,308,0,0" SelectionChanged="ListData_SelectionChanged"/>
-        <Button x:Name="DeleteButton" Content="DeleteButton" HorizontalAlignment="Left" Margin="508,150,0,0" VerticalAlignment="Top" Click="DeleteButton_Click" Height="67" Width="203"/>
+        <Button x:Name="DeleteButton" Content="Kiválasztott elem törlése" HorizontalAlignment="Left" Margin="508,150,0,0" VerticalAlignment="Top" Click="DeleteButton_Click" Height="67" Width="203" FontSize="16" FontWeight="Bold"/>
 
         <Label x:Name="labelCurrentStatus" Content="Kiválasztott elem státusza: " HorizontalAlignment="Left" Margin="37,154,0,0" VerticalAlignment="Top"/>
         <Label x:Name="labelCurrentPieces" Content="Kiválasztott elem darabszáma: " HorizontalAlignment="Left" Margin="16,245,0,0" VerticalAlignment="Top"/>

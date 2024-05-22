@@ -7,9 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="openAddForm" Content="openAddForm" HorizontalAlignment="Left" Margin="56,217,0,0" VerticalAlignment="Top" Height="59" Width="117" Click="openAddForm_Click"/>
-        <Button x:Name="openEditForm" Content="openEditForm" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Height="59" Width="116" Click="openEditForm_Click"/>
-        <Button x:Name="openDeleteForm" Content="openDeleteForm" HorizontalAlignment="Left" Margin="617,217,0,0" VerticalAlignment="Top" Height="59" Width="117" Click="openDeleteForm_Click"/>
+        <Button x:Name="openAddForm" Content="Megrendelés hozzáadása" HorizontalAlignment="Left" Margin="56,217,0,0" VerticalAlignment="Top" Height="59" Width="160" Click="openAddForm_Click" FontWeight="Bold"/>
+        <Button x:Name="openEditForm" Content="Megrendelés szerkesztése" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Height="59" Width="192" Click="openEditForm_Click" FontWeight="Bold"/>
+        <Button x:Name="openDeleteForm" Content="Megrendelés törlése" HorizontalAlignment="Left" Margin="575,217,0,0" VerticalAlignment="Top" Height="59" Width="160" Click="openDeleteForm_Click" FontWeight="Bold"/>
+        <Label Content="Profi Ballagási Meghívó Készítő Cég" HorizontalAlignment="Left" Margin="191,46,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="22"/>
 
     </Grid>
 </Window>

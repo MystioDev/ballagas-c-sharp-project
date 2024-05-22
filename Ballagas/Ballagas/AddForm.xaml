@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="AddForm" Height="450" Width="800">
     <Grid>
-        <Label Content="AddForm" HorizontalAlignment="Center" Margin="0,45,0,0" VerticalAlignment="Top"/>
+        <Label Content="Megrendelés létrehozása" HorizontalAlignment="Center" Margin="0,29,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="22"/>
         <DataGrid x:Name="ListData" Margin="0,308,0,0" SelectionChanged="ListData_SelectionChanged"/>
-        <Button x:Name="AddButton" Content="AddButton" HorizontalAlignment="Left" Margin="246,259,0,0" VerticalAlignment="Top" Click="AddButton_Click"/>
+        <Button x:Name="AddButton" Content="Létrehozás" HorizontalAlignment="Left" Margin="260,242,0,0" VerticalAlignment="Top" Click="AddButton_Click" Height="44" Width="76" FontWeight="Bold"/>
         <TextBox x:Name="schoolNameBox" HorizontalAlignment="Left" Margin="45,106,0,0" TextWrapping="Wrap" Text="schoolNameBox" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="classNameBox" HorizontalAlignment="Left" Margin="45,159,0,0" TextWrapping="Wrap" Text="classNameBox" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="classYearsBox" HorizontalAlignment="Left" Margin="45,217,0,0" TextWrapping="Wrap" Text="classYearsBox" VerticalAlignment="Top" Width="120"/>
@@ -18,7 +18,7 @@
         <TextBox x:Name="piecesBox" HorizontalAlignment="Left" Margin="247,168,0,0" TextWrapping="Wrap" Text="piecesBox" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="customerNameBox" HorizontalAlignment="Left" Margin="600,115,0,0" TextWrapping="Wrap" Text="customerNameBox" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="customerPhoneBox" HorizontalAlignment="Left" Margin="600,177,0,0" TextWrapping="Wrap" Text="customerPhoneBox" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="customerAddButton" Content="customerAddButton" HorizontalAlignment="Left" Margin="600,226,0,0" VerticalAlignment="Top" Click="customerAddButton_Click"/>
+        <Button x:Name="customerAddButton" Content="Megrendelő hozzáadása" HorizontalAlignment="Left" Margin="583,226,0,0" VerticalAlignment="Top" Click="customerAddButton_Click" Height="31" Width="150" FontWeight="Bold"/>
 
     </Grid>
 </Window>
