@@ -16,8 +16,20 @@ namespace Ballagas {
             Id = id;
         }
 
-        public string Name { get => name; set => name = value; }
-        public string Phone { get => phone; set => phone = value; }
+        public Customer(string name, string phone) {
+            Name = name;
+            Phone = phone;
+        }
+
+        public string Name { get => name; set {
+            if (value.Length == 0) throw new Exception("Nem lehet üres a megrendelő neve!");
+
+            name = value;
+        } }
+        public string Phone { get => phone; set {
+            if (value.Length == 0) throw new Exception("Nem lehet üres a megrendelő telefonszáma!");
+            phone = value;
+        } }
         public int Id { get => id; set => id = value; }
     }
 }

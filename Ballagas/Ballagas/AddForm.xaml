@@ -16,6 +16,9 @@
         <TextBox x:Name="messageBox" HorizontalAlignment="Left" Margin="45,259,0,0" TextWrapping="Wrap" Text="messageBox" VerticalAlignment="Top" Width="120"/>
         <ComboBox x:Name="customersCombo" HorizontalAlignment="Left" Margin="400,108,0,0" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="piecesBox" HorizontalAlignment="Left" Margin="247,168,0,0" TextWrapping="Wrap" Text="piecesBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="customerNameBox" HorizontalAlignment="Left" Margin="600,115,0,0" TextWrapping="Wrap" Text="customerNameBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="customerPhoneBox" HorizontalAlignment="Left" Margin="600,177,0,0" TextWrapping="Wrap" Text="customerPhoneBox" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="customerAddButton" Content="customerAddButton" HorizontalAlignment="Left" Margin="600,226,0,0" VerticalAlignment="Top" Click="customerAddButton_Click"/>
 
     </Grid>
 </Window>

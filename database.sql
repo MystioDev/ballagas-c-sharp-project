@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2024. Máj 22. 13:56
--- Kiszolgáló verziója: 10.4.28-MariaDB
--- PHP verzió: 8.2.4
+-- Létrehozás ideje: 2024. Máj 22. 20:18
+-- Kiszolgáló verziója: 10.4.32-MariaDB
+-- PHP verzió: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -45,7 +45,8 @@ INSERT INTO `customers` (`name`, `phone`, `id`) VALUES
 ('Példa Géza', '+3606999999', 5),
 ('Példa Dávid', '+3606999999', 6),
 ('Példa Dominik', '+3606999999', 7),
-('Példa Valaki', '+3606999999', 8);
+('Példa Valaki', '+3606999999', 8),
+('customerNameBox', '65449', 9);
 
 -- --------------------------------------------------------
 
@@ -58,7 +59,8 @@ CREATE TABLE `orders` (
   `className` varchar(20) NOT NULL,
   `classYears` varchar(50) NOT NULL,
   `message` varchar(255) NOT NULL,
-  `status` varchar(20) NOT NULL DEFAULT 'Függőben',
+  `status` varchar(20) NOT NULL DEFAULT 'Beérkezett',
+  `pieces` int(11) NOT NULL,
   `customerId` int(11) NOT NULL,
   `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
@@ -67,12 +69,14 @@ CREATE TABLE `orders` (
 -- A tábla adatainak kiíratása `orders`
 --
 
-INSERT INTO `orders` (`schoolName`, `className`, `classYears`, `message`, `status`, `customerId`, `id`) VALUES
-('\r\nSiófoki SZC Mathiász János Technikum és Gimnázium', '12/A', '2020-2024', 'Üzenet', 'Függőben', 2, 7),
-('\r\nSiófoki SZC Mathiász János Technikum és Gimnázium', '12/A', '2020-2024', 'Üzenet', 'Függőben', 5, 8),
-('\r\nSiófoki SZC Mathiász János Technikum és Gimnázium', '12/A', '2020-2024', 'Üzenet', 'Függőben', 1, 9),
-('\r\nSiófoki SZC Mathiász János Technikum és Gimnázium', '12/A', '2020-2024', 'Üzenet', 'Függőben', 8, 10),
-('\r\nSiófoki SZC Mathiász János Technikum és Gimnázium', '12/A', '2020-2024', 'Üzenet', 'Függőben', 3, 11);
+INSERT INTO `orders` (`schoolName`, `className`, `classYears`, `message`, `status`, `pieces`, `customerId`, `id`) VALUES
+('\r\nSiófoki SZC Mathiász János Technikum és Gimnázium', '12/A', '2020-2024', 'Üzenet', 'Kézbesítve', 90, 2, 7),
+('\r\nSiófoki SZC Mathiász János Technikum és Gimnázium', '12/A', '2020-2024', 'Üzenet', 'Függőben', 50, 5, 8),
+('\r\nSiófoki SZC Mathiász János Technikum és Gimnázium', '12/A', '2020-2024', 'Üzenet', 'Függőben', 24, 1, 9),
+('\r\nSiófoki SZC Mathiász János Technikum és Gimnázium', '12/A', '2020-2024', 'Üzenet', 'Függőben', 32, 3, 11),
+('Bacsák', '12.b', '2000-2024', 'rossz üzenet', 'Függőben', 4, 3, 12),
+('Nem bacsák', '12.c', '2024-2032', 'nagypn rossz üzenet', 'Függőben', 5, 4, 13),
+('schoolNameBox', 'classNameBox', 'classYearsBox', 'messageBox', 'Beérkezett', 52, 9, 15);
 
 --
 -- Indexek a kiírt táblákhoz
@@ -99,13 +103,13 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT a táblához `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT a táblához `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- Megkötések a kiírt táblákhoz

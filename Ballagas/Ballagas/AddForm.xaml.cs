@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using Mysqlx.Crud;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,21 +27,25 @@ namespace Ballagas
         private List<Order> updateDataGrid() {
             Tools tools = new Tools();
 
-            return tools.listData(ListData);
+            ordersList = tools.listData(ListData);
+
+            return ordersList;
         }
 
         private List<Customer> updateComboBox() {
             Tools tools = new Tools();
 
-            return tools.listCombo(customersCombo);
+            customersList = tools.listCombo(customersCombo);
+
+            return customersList;
         }
 
         public AddForm()
         {
             InitializeComponent();
 
-            ordersList = updateDataGrid();
-            customersList = updateComboBox();
+            updateDataGrid();
+            updateComboBox();
         }
 
         private void AddButton_Click(object sender, RoutedEventArgs e) {
@@ -86,6 +91,33 @@ namespace Ballagas
 
         private void ListData_SelectionChanged(object sender, SelectionChangedEventArgs e) {
 
+        }
+
+        private void customerAddButton_Click(object sender, RoutedEventArgs e) {
+            try {
+                Customer customer = new Customer(
+                    name: customerNameBox.Text,
+                    phone: customerPhoneBox.Text
+                );
+
+                
+                Database db = new Database();
+
+                MySqlConnection conn = db.getConnection();
+                conn.Open();
+                string ordersSql = $"INSERT INTO `customers`(`name`, `phone`) VALUES ('{customer.Name}','{customer.Phone}');";
+                MySqlCommand cmd = new MySqlCommand(ordersSql, conn);
+                cmd.ExecuteReader();
+                conn.Close();
+
+                MessageBox.Show("Rögzítés sikeres!");
+
+                updateDataGrid();
+                updateComboBox();
+
+            } catch (Exception ex) {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
