@@ -87,6 +87,9 @@ namespace Ballagas
         }
 
         private void ListData_SelectionChanged(object sender, SelectionChangedEventArgs e) {
+            if (ListData.SelectedIndex == -1) return;
+
+
             try {
                 Order order = ListData.SelectedItem as Order;
 
